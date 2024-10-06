@@ -106,7 +106,8 @@ class Script{
     }
 
     Settings := Map(
-        "TimerDurationMS",100
+        "TimerDurationMS",100,
+        "SendMode","Event"
     )
     Settings.Default := ""
 
@@ -160,6 +161,8 @@ class Script{
 
             '
         )
+        if(this.Settings["SendMode"]!="Input")
+            str .= "SendMode(`"" this.Settings["SendMode"] "`")`n"
         for i,bind in this.Binds{
             str .= String(bind)
         }
