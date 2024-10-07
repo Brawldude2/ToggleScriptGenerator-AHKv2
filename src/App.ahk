@@ -111,7 +111,7 @@ class App extends Editor{
         this.UI.SetFont("s12")
         this.UI.Add("Edit","x20 y130 w360 h90 ReadOnly +VScroll Background1f1f1f vDescription","Description.")
 
-        this.UI.Add("Text","y+20 x10 vFunctionEntrance","RunOnceWhenToggled(){")
+        this.UI.Add("Text","y+20 x10 w300 vFunctionEntrance","RunOnceWhenToggled(){")
         this.UI.Add("Edit","y+5 xp+36 w330 r8 -HScroll -Border Background2e2e2e vFunctionEdit","Send('w')").OnEvent("LoseFocus",(*)=>this.SaveEdit())
         this.UI.Add("Text","y+5 x10","}")
 
@@ -139,6 +139,7 @@ class App extends Editor{
 
     Update(){
         func_name := this.UI["FunctionSelector"].Text
+        this.UI["FunctionEntrance"].Text := func_name "(){"
         this.UI["Description"].Text := this.FunctionDescriptions[func_name]
         this.UI["FunctionEdit"].Text := this.GetFunctions()[func_name]
     }
