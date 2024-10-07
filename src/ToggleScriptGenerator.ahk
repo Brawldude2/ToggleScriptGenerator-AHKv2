@@ -45,6 +45,8 @@ class Editor{
         for func,content in this.GetFunctions(){
             if(content){
                 this.SetFlag(func,true)
+            }else{
+                this.SetFlag(func,false)
             }
         }
         for i,bind in this.GetBinds(){
