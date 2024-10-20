@@ -4,6 +4,7 @@
 >  This is the place you will bind your hotkeys to desired functions.
 
 Add -> Adds another binding.
+
 Edit ->
 - Record -> Focus on the box and record your hotkey.
 - Input -> If the record option doesn't work you can directly input hotkeys in the form AHKv2 accepts it.
