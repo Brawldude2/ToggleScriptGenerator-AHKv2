@@ -1,5 +1,5 @@
-![Screenshot](assets/screenshots/ToggleScriptGenerator.png)
 # Welcome to ToggleScriptGenerator!
+![Screenshot](assets/screenshots/ToggleScriptGenerator.png)
 ## Edit Hotkeys
 >  This is the place you will bind your hotkeys to desired functions.
 
